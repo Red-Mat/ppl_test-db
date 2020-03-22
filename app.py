@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     try:
-        dato = environ[""]
+        dato = environ["DATABASE_URL"]
     except:
          return "hola Wachin"
     else:
