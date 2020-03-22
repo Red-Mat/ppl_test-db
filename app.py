@@ -1,10 +1,17 @@
+from os import environ
+
 from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "hola"
+    try:
+        dato = environ["HELLO"]
+    except:
+         return "hola VE no encontrado"
+    else:
+        return dato
 
 
 if __name__ == '__main__':
