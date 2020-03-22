@@ -9,7 +9,7 @@ def home():
     try:
         dato = environ[""]
     except:
-         return "hola VE no encontrado"
+         return "hola Wachin"
     else:
         return dato
 
