@@ -9,7 +9,7 @@ def home():
     try:
         dato = environ["DATABASE_URL"]
     except:
-         return "hola Wachin"
+         return "hola Mundo"
     else:
         return dato
 
